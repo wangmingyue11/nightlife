@@ -1,0 +1,16 @@
+div.y_content{width: 100%;height: 100%;}
+div.y_content div.y_header{width: 100%;height: 0.9rem;background: rgb(25,115,87);line-height: 1rem;position: fixed;}
+div.y_content div.y_header a{font-size: 0.25rem;text-decoration: none;color: white;float: left;width: 0.8rem;height: 100%;}
+div.y_content div.y_header a img{width: 0.205rem;height: 0.35rem;display: inline-block;padding-top: 0.15rem;}
+div.y_content div.y_header p{width: 1.2rem;font-size: 0.3rem;color: white;margin: 0 auto;}
+div.y_content div.y_style-of-cooking{width: 100%;height: 100%;background: white;padding-top: 0.9rem;}
+div.y_content div.y_style-of-cooking ul{width: 1.5rem;height: 100%;float: left;}
+div.y_content div.y_style-of-cooking ul li{font-size: 0.25rem;width: 100%;height:10%;border-bottom: 1px solid gainsboro;text-align: center;line-height:0.922rem;opacity: 0.7;background: gainsboro;}
+div.y_content div.y_style-of-cooking ul li:hover{background: white;}
+div.y_content div.y_style-of-cooking div.y_food{height: 100%;width: 4.9rem;float: right;}
+div.y_content div.y_style-of-cooking div.y_food div{width: 100%;height: 25%;box-sizing: border-box;padding: 0.2rem;border: 1px solid gainsboro;}
+div.y_content div.y_style-of-cooking div.y_food div h2{font-size: 0.28rem;padding: 0.1rem 0;opacity: 0.6;}
+div.y_content div.y_style-of-cooking div.y_food div p{font-size: 0.2rem;}
+
+
+

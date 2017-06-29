@@ -1,0 +1,6 @@
+div.y_content{width: 100%;height: 100%;position: relative;}
+div.y_content div.y_header{width: 100%;height: 0.9rem;background: rgb(25,115,87);line-height: 1rem;position: fixed;}
+div.y_content div.y_header a{font-size: 0.25rem;text-decoration: none;color: white;float: left;width: 0.8rem;height: 100%;}
+div.y_content div.y_header a img{width: 0.205rem;height: 0.35rem;display: inline-block;padding-top: 0.15rem;}
+div.y_content div.y_header p{width:1.5rem;font-size: 0.3rem;color: white;margin: 0 auto;}
+div.y_content>img{position: absolute;width: 2.3rem;height: 1.6rem;left: 50%;top: 30%;margin:0 0 0 -1.15rem; }

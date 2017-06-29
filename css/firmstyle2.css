@@ -1,0 +1,853 @@
+body{
+    background: #f1f0f0;
+}
+.y_container{
+    padding-top: 1.48rem;
+    font-size: 0.2rem;
+    color: #c6c6c6;
+    overflow: hidden;
+}
+/*****************每一部分内容的外框*******************/
+/*内容的第一部分联系人*/
+.y_linkman,.y_payment,.y_remark,.y_discount,.y_deliveryFee,.y_dish,.y_special{
+    box-sizing: border-box;
+    width: 100%;
+    height: 1rem;
+    background: white;
+    margin-bottom:0.2rem;
+}
+/*联系人的左边*/
+.y_linkmanInfo{
+    float: left;
+    width: 90%;
+    height: 100%;
+    margin-left:0.34rem;
+}
+/*打折的左边*/
+.y_discount{
+    padding-top: 0.17rem;
+}
+.y_discountTxt{
+    height: 0.47rem;
+    margin-left:0.34rem;
+    overflow: hidden;
+}
+.y_discountSize{
+    float: left;
+    width: 95%;
+}
+/*在线支付*/
+.y_payment{
+    padding-top:0.16rem;
+    padding-left: 0.34rem;
+}
+.y_payOnline{
+    height: 0.34rem;
+    overflow: hidden;
+}
+.y_payName{
+    float: left;
+}
+/*在线支付的单选框*/
+.complete{
+    float: right;
+    margin-right: 0.18rem;
+}
+.y_payOff{
+    display: inline-block;
+    height: 0.28rem;
+    font-size: 0.16rem;
+    text-align: center;
+    line-height: 0.28rem;
+    background: #09765b;
+    margin-left:0.1rem;
+}
+.y_payShop>div{
+    display:inline-block;
+}
+
+/*打折的高*/
+.y_discount{
+    height:2rem;
+}
+/*联系人中的电话*/
+.y_linkmanTele{
+    margin-left: 0.6rem;
+}
+.y_dish{
+    overflow: hidden;
+}
+.y_dish div{
+    display:inline-block;
+    line-height:1rem;
+}
+.y_dish div:nth-child(2){
+    margin-left:0.33rem;
+}
+.y_dish div:nth-child(1){
+    width: 0.05rem;
+    height: 100%;
+    background: #007458;
+    float: left;
+}
+.y_dish>div:nth-child(3){
+    float: right;
+    margin-right:0.2rem;
+}
+.y_dish>div:nth-child(4){
+    float: right;
+    margin-right:0.4rem;
+}
+.y_dish>div:nth-child(4) img{
+    width: 0.12rem;
+    height: 0.12rem;
+}
+/*配送费*/
+.y_renderSer{
+    position: relative;
+}
+.y_renderSer span:nth-child(2){
+    position: absolute;
+    right: 0.54rem;
+    color: #ff163e;
+}
+
+
+/*支付部分改变宽*/
+.y_deliveryFee>div{
+    float: left;
+    width: 100%;
+    margin-left:0.34rem;
+}
+
+/*每部分内容的内边距*/
+.y_linkmanInfoTop,.y_linkmanAddress,.y_deliveryFee>div{
+    margin-top:0.2rem;
+    height: 0.2rem;
+}
+.y_discountSize{
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.y_discountSize div:nth-child(1){
+    float: left;
+}
+.y_discountSize div:nth-child(2){
+    float: right;
+    padding-right: 0.1rem;
+}
+/*对号的背景颜色*/
+.y_payOnline>button>svg,.y_payShop>button>svg{
+    width:0.2rem;
+    height: 0.2rem;
+    border-radius: 50%;
+    fill:white;
+    border:1px solid #7C7C7C;
+}
+.y_payOnline>button{
+	border:none;
+}
+.y_payOnline>button.complete:hover svg{
+    fill:white;
+}
+.y_payOnline>button.complete:hover svg .fill{
+    fill:white;
+}
+.y_payShop>button.complete:hover svg{
+    fill:#09765b;
+}
+.y_payShop>button.complete:hover svg .fill{
+    fill:white;
+}
+/*********************箭头******************************/
+/*联系人的箭头*/
+.y_linkmanImg{
+    margin-top:0.4rem;
+    height: 0.2rem;
+    vertical-align: middle;
+}
+/*备注的箭头*/
+.y_remarkRow{
+    height: 0.2rem;
+    vertical-align: middle;
+}
+/*打折的箭头*/
+.y_discountRow{
+    /*margin-top:0.2rem;*/
+    height: 0.2rem;
+    vertical-align: middle;
+}
+.y_help{
+    margin-bottom:1.92rem;
+    float: right;
+    padding-bottom:0.08rem;
+    color: #007458;
+    border-bottom: 1px solid #007458;
+    margin-right: 0.2rem;
+}
+.y_help::after{
+    content:'';//子元素内容为空
+display:block;//设置为块级元素
+height:0px;//高度设置为0
+visibility:hidden;//设置子元素不可见
+clear:both;
+}
+.y_help{
+    *zoom:1;//兼容IE6
+}
+
+
+.y_footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 0.54rem;
+    padding-left: 0.34rem;
+    width: 100%;
+    background: white;
+    font-size: 0.2rem;
+    color:#007458;
+}
+.y_footer div{
+    display: inline-block;
+}
+.y_price{
+    padding-top: 0.17rem;
+}
+.y_price div{
+    margin-right: 0.1rem;
+}
+#y_sum{
+    color:#c6c6c6;
+}
+#y_sumNum{
+    font-size: 0.25rem;
+}
+.y_define{
+    float: right;
+    width: 1.2rem;
+    height: 100%;
+    background:#007458;
+    color: white;
+    text-align: center;
+    line-height: 0.54rem;
+}
+.y_content2{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    background: rgba(0,0,0,0.7);
+    z-index: 40;
+}
+/*备注的内边距*/
+.y_remark{
+    padding-top: 0.2rem;
+    padding-left: 0.34rem;
+    overflow: hidden;
+}
+.y_serviceTimeLeft,.y_remarkTxt{
+    overflow: hidden;
+    width: 95%;
+    float: left;
+}
+.y_remarkContent{
+    padding-top:0.1rem ;
+}
+.y_serviceTimeLeft>div{
+    display: inline-block;
+}
+.y_serviceTimeLeft>div:nth-of-type(1){
+    float: left;
+}
+.y_serviceTimeLeft>div:nth-of-type(2){
+    float: right;
+    /*margin-right: 0.1rem;*/
+}
+.y_serviceTimeLeft>div:nth-of-type(2) span{
+    color: red;
+}
+/*套餐专车的高*/
+.y_special{
+    height: 0.5rem;
+    overflow: hidden;
+}
+.y_specialCar{
+    display: inline-block;
+    padding-left: 0.34rem;
+    line-height: 0.5rem;
+    float: left;
+    width: 95%;
+}
+.y_specialRow{
+    vertical-align: middle;
+    width: 0.12rem;
+    height: 0.2rem;
+    margin-top: 0.15rem;
+}
+/***************************第二部分付款详情*****************************/
+.y_content2 .y_payDetails,.y_choseWay,.y_payPsd{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    top:38.38%;
+    font-size: 0.2rem;
+    background: white;
+}
+.y_choseWay{
+    display: none;
+}
+/*付款详情*/
+.y_paytitle{
+    box-sizing: border-box;
+    border-bottom: 0.01rem solid #e4e4e4;
+    width: 100%;
+    height:0.46rem;
+    margin: 0.12rem 0  0.12rem 0;
+    text-align: center;
+    position: relative;
+}
+.y_paytitle>img{
+    position: absolute;
+    top: 0.12rem;
+    left: 0.15rem;
+    width: 0.12rem;
+    height: 0.12rem;
+    z-index: 50;
+}
+.y_paytitle>span{
+    display: inline-block;
+}
+/*付款的内容*/
+.y_payContent{
+    margin: 0 0.3rem 0 0.3rem;
+}
+.y_alipay,.y_payWay,.y_payRequired,.y_account,.y_weChat{
+    box-sizing: border-box;
+    border-bottom: 0.01rem solid #e4e4e4;
+    padding: 0.25rem 0 0.25rem 0;
+    overflow: hidden;
+}
+.y_alipay>span:nth-child(1),.y_payWay>span:nth-child(1){
+    float: left;
+}
+.y_alipay>span:nth-child(2),.y_payWay img{
+    float: right;
+}
+.y_payWay img{
+    height: 0.2rem;
+    width: 0.12rem;
+    margin-top: 0.05rem;
+}
+.y_payWay>span:nth-of-type(2){
+    float: right;
+    margin-right:0.1rem;
+}
+.y_payFirm{
+    width:90.6%;
+    position: absolute;
+    bottom:0.16rem;
+    height: 0.45rem;
+    font-size: 0.2rem;
+    background: #007458;
+    margin: 0 0.3rem 0 0.3rem;
+    border-radius:0.04rem;
+    color: white;
+}
+/*选择付款方式*/
+.y_chosedCard{
+    margin-right: -0.1rem;
+    display: none;
+}
+.y_chosedCard>svg{
+    width:0.3rem;
+    height: 0.3rem;
+    border: 0px solid #cfcfcf;
+    fill:white;
+}
+.y_chosedCard svg .fill{
+    fill:#09765b;
+}
+/*账户余额*/
+.y_account{
+    padding: 0.1rem 0 0 0;
+}
+.y_account div{
+    margin-bottom: 0.1rem;
+}
+/*支付密码*/
+.y_payCode{
+    margin: 0 auto;
+}
+.y_payCode td{
+    border: 1px solid #cfcfcf;
+    height:0.45rem;
+    width: 1.2rem;
+    text-align: center;
+    line-height: 0.45rem;
+}
+/*选择支付方式*/
+.y_payStyle{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top:22.56%;
+    font-size: 0.2rem;
+    background: white;
+}
+.y_whichPay{
+    border-bottom: 1px solid #cfcfcf;
+    height: 0.6rem;
+    width: 100%;
+    text-align: center;
+    line-height: 0.6rem;
+}
+.y_chosedAli,.y_chosedWechat{
+    box-sizing: border-box;
+    margin:0 0.15rem 0rem 0.15rem;
+    height: 2rem;
+    line-height: 2rem;
+    border-bottom: 1px solid #cfcfcf;
+    overflow: hidden;
+}
+#y_chosedAli{
+    margin-bottom:0;
+}
+.y_chosedWechat+input{
+    font-size: 0.2rem;
+    width: 1.5rem;
+    height: 0.8rem;
+    background:#007458;
+    color: white;
+    float: right;
+    border-radius: 0.1rem;
+}
+.y_aliInfo,.y_wechatInfo{
+    height: 100%;
+    float: left;
+}
+.y_chosedAli>button,.y_chosedWechat>button{
+    float: right;
+    height: 100%;
+}
+.y_aliInfo img,.y_wechatInfo img{
+    width:0.6rem;
+    height: 0.6rem;
+    vertical-align: middle;
+}
+.y_aliInfo span,.y_wechatInfo span{
+    padding-left:0.25rem;
+    vertical-align: middle;
+}
+/*对号的背景颜色*/
+.y_chosedAli>button>svg,.y_chosedWechat>button>svg{
+    width:0.2rem;
+    height: 0.2rem;
+    border-radius: 50%;
+    border: 1px solid #cfcfcf;
+    fill:white;
+}
+/*.y_chosedAli>button.complete:hover svg{*/
+    /*fill:#09765b;*/
+/*}*/
+/*.y_chosedAli>button.complete:hover svg .fill{*/
+    /*fill:white;*/
+/*}*/
+/*.y_chosedWechat>button.complete:hover svg{*/
+    /*fill:#09765b;*/
+/*}*/
+/*.y_chosedWechat>button.complete:hover svg .fill{*/
+    /*fill:white;*/
+/*}*/
+/***************************第三部分：输入验证码******************************/
+.y_payCodeTxt,.y_addCardTxt{
+    font-size:0.2rem;
+    padding-top:1.28rem;
+    width: 100%;
+}
+.y_putPaycode{
+    height: 0.6rem;
+    line-height: 0.6rem;
+    margin:0 0.15rem 0 0.15rem;
+}
+.y_getPaycode{
+    padding:0 0 0 0.15rem;
+    height:0.5rem;
+    line-height: 0.5rem;
+    background: white;
+    width: 100%;
+}
+.y_checkPaycode{
+    margin-left: 0.1rem;
+}
+.y_getPaycodeTxt{
+    display: inline-block;
+    float: left;
+}
+.y_sendCode{
+    margin-top:0.15rem;
+    float: right;
+    width:1.5rem;
+    height:0.2rem;
+    line-height: 0.2rem;
+    border-left: 1px solid #cfcfcf;
+    padding-left: 0.2rem;
+}
+.y_next{
+    margin-top: 0.3rem;
+    height: 0.45rem;
+    width: 90.63%;
+    text-align: center;
+    line-height: 0.45rem;
+    background: #c6c6c6;
+    margin-left: 0.3rem;
+    border-radius: 0.04rem;
+    color: #7c7c7c;
+}
+/********************填写银行卡信息*********************/
+.y_cardInfo{
+    font-size:0.2rem;
+    padding-top:1.48rem;
+    width: 100%;
+}
+/*卡的类型*/
+.y_cardType,.y_cardHoldInfo,.y_putCardNum{
+    height: 0.5rem;
+    background-color:white;
+    width: 100%;
+    position: relative;
+}
+.y_cardType>div,.y_cardHoldInfo>div,.y_putCardNum>div{
+    margin-left: 0.15rem;
+    line-height: 0.5rem;
+    margin-right: 0.15rem;
+}
+.y_cardType>input:nth-of-type(1),.y_cardHolder>input,.y_putCardNum>input{
+    position: absolute;
+    top:0;
+    height: 0.5rem;
+    left: 0.95rem;
+    border: 0px solid #f1f0f0;
+    font-size: 0.2rem;
+    outline: none;
+border: 0;
+}
+.y_cardType>input:nth-of-type(2){
+    position: absolute;
+    top:0;
+    height: 0.5rem;
+    left: 2.45rem;
+    border: 0px solid #f1f0f0;
+    font-size: 0.2rem;
+}
+/*持卡人的信息*/
+.y_cardHoldInfo{
+    height: 1rem;
+    margin-top: 0.2rem;
+}
+.y_cardHolder{
+    border-bottom: 0.01rem solid #e3e3e3;
+}
+.y_cardHolder>button,.y_ID>button{
+    width: 0.2rem;
+    height: 0.2rem;
+    background: #c0c0c0;
+    position: absolute;
+    top: 0.15rem;
+    right:0.2rem;
+    color: white;
+    border-radius:50%;
+    border: 0;
+    line-height:0.2rem;
+}
+.y_ID{
+    position: relative;
+}
+.y_ID>input{
+    position: absolute;
+    top:0;
+    height: 0.5rem;
+    left: 0.8rem;
+    border: 0px solid #f1f0f0;
+    font-size: 0.2rem;
+}
+.y_ID>button{
+    right:0.05rem;
+}
+/*初始的时候的页面*/
+/*.y_next{*/
+    /*background-color: #007458;*/
+    /*color:white;*/
+/*}*/
+/**********************添加银行卡*********************/
+.y_addCardstep{
+    height: 0.6rem;
+    line-height: 0.6rem;
+    position: relative;
+}
+.y_addCardstep>span:nth-of-type(1){
+    position: absolute;
+    left: 11.72%;
+}
+.y_addCardstep>span:nth-of-type(2){
+    position: absolute;
+    left: 43.75%;
+}
+.y_addCardstep>span:nth-of-type(3){
+    position: absolute;
+    right: 15.2%;
+}
+.y_icon>div{
+    display: inline-block;
+}
+.y_icon>div:nth-of-type(1),.y_icon>div:nth-of-type(3),.y_icon>div:nth-of-type(5){
+    width: 0.1rem;
+    height: 0.1rem;
+    border-radius:50%;
+    background:#007458;
+}
+.y_icon>div:nth-of-type(2),.y_icon>div:nth-of-type(4){
+    height: 0.04rem;
+    width: 1.95rem;
+    background:#007458;
+}
+.y_icon{
+    position: relative;
+    height: 0.1rem;
+    margin-bottom:0.2rem;
+}
+.y_icon>div:nth-of-type(1){
+    position:absolute;
+    left: 17.19%;
+}
+.y_icon>div:nth-of-type(2){
+    position:absolute;
+    left: 18.75%;
+    top: 0.03rem;
+}
+.y_icon>div:nth-of-type(3){
+    position:absolute;
+    left: 48.9%;
+}
+.y_icon>div:nth-of-type(4){
+    position:absolute;
+    left: 50.46%;
+    top: 0.03rem;
+}
+.y_icon>div:nth-of-type(5){
+    position:absolute;
+    left: 80.61%;
+}
+.y_putCardNum{
+    margin-bottom: 0.15rem;
+}
+.y_hint{
+    font-size: 0.16rem;
+    margin-left: 0.15rem;
+}
+/**********************选择时间***********************/
+.y_sendTime{
+    width:2.7rem;
+    /*height: 3.2rem;*/
+    position: fixed;
+    left: 28.91%;
+    top:38.56%;
+    font-size: 0.2rem;
+    background: white;
+    height: 3.2rem;
+}
+.y_sendTimeTitle{
+    border-bottom: 0.01rem solid #007458;
+    height: 0.6rem;
+    width: 100%;
+    padding-left:0.2rem;
+    line-height: 0.6rem;
+    overflow: hidden;
+}
+.y_today{
+    width: 1.1rem;
+    height: 0.6rem;
+    text-align: center;
+    line-height: 0.6rem;
+    float: left;
+}
+.y_immediately{
+    height: 0.6rem;
+    text-align: center;
+    padding-top:0.1rem;
+    font-size: 0.16rem;
+}
+.y_more{
+    width: 100%;
+    height:62.5%;
+    overflow: hidden;
+}
+.y_void{
+    width: 1.1rem;
+    border:1px solid #c6c6c6;
+    height:100%;
+    background-color: white;
+    float: left;
+}
+.y_optionTime{
+    font-size: 0.16rem;
+}
+.y_optionTime>li{
+    overflow: hidden;
+    margin-bottom:0.25rem;
+}
+.y_optionTime>li>span{
+    padding-left:0.2rem;
+}
+.y_optionTime>li>button{
+    float: right;
+    padding-right: 0.1rem;
+}
+
+/************************确认订单*************************/
+.y_detail{
+    box-sizing: border-box;
+    height: 3.5rem;
+    width: 100%;
+    padding-left:0.33rem;
+    background: white;
+    padding-top: 0.2rem;
+    overflow: hidden;
+    margin-bottom: 0.2rem;
+}
+.y_shop{
+    width: 100%;
+    height: 0.35rem;
+}
+.y_shop>img{
+    width: 0.35rem;
+    height: 100%;
+    vertical-align: middle;
+}
+.y_shop>p{
+    display: inline-block;
+    margin-left:0.2rem;
+}
+.y_food{
+    box-sizing: border-box;
+    padding-top: 0.2rem;
+    overflow: hidden;
+}
+.y_food>img{
+    width:1.08rem;
+    height: 1rem;
+    float: left;
+}
+.y_food>div{
+    width:82.21%;
+    display: inline-block;
+    padding-left: 0.2rem;
+}
+.y_foodprice{
+    overflow: hidden;
+}
+.y_foodprice>p{
+    float: left;
+}
+.y_foodprice>p:nth-of-type(2){
+    margin-left:0.2rem;
+    text-decoration: line-through;
+}
+.y_foodprice>div{
+    float: right;
+    margin-right: 0.2rem;
+}
+.y_foodprice>div>img{
+    width:0.12rem;
+    height: 0.12rem;
+    vertical-align: middle;
+}
+.y_transportFee,.y_actualFee{
+    box-sizing: border-box;
+    padding-top: 0.2rem;
+}
+.y_transportFee>span,.y_actualFee>span{
+    padding-left: 0.15rem;
+}
+.y_dial{
+    float: right;
+    box-sizing: border-box;
+    width: 3rem;
+    height: 0.45rem;
+    border:1px solid #c6c6c6;
+    border-radius:0.04rem;
+    text-align: center;
+    line-height: 0.45rem;
+    margin-right: 0.2rem;
+}
+.y_dial>img{
+    vertical-align: middle;
+    height: 0.25rem;
+    width: 0.23rem;
+}
+.y_dial>span{
+    margin-left: 0.15rem;
+}
+.y_orderInfo{
+    box-sizing: border-box;
+    height: 1rem;
+    width: 100%;
+    padding-left:0.33rem;
+    background: white;
+    padding-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+.y_finish{
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 0.54rem;
+    width: 100%;
+    overflow: hidden;
+    background: white;
+    font-size: 0.2rem;
+    padding-top: 0.09rem;
+}
+.y_finished{
+    float: right;
+    background:#007458;
+    width: 0.6rem;
+    height: 0.35rem;
+    margin-right: 0.2rem;
+    color: white;
+    line-height: 0.35rem;
+    text-align: center;
+}
+.y_cancelOrder{
+    float: right;
+    border: 0.01rem solid #c6c6c6;
+    width: 1rem;
+    height: 0.35rem;
+    margin-right: 0.1rem;
+    color: black;
+    line-height: 0.35rem;
+    text-align: center;
+}
+/*******************确认订单**********************/
+.y_payAli{
+    float: right;
+}
+/*********************到店付款***********************/
+/*.y_remark{*/
+    /*height: 0.5rem;*/
+/*}*/
+
+/*.y_remarkTxt{*/
+    /*line-height: 0.5rem;*/
+/*}*/
+/*.y_remarkContent{*/
+    /*padding-top:0rem;*/
+/*}*/
+/*.y_remarkRow{*/
+    /*margin-top:0.15rem;*/
+    /*height: 0.2rem;*/
+    /*vertical-align: middle;*/
+/*}*/

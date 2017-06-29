@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <header class="y_header">
+        <span class="y_heading">登录</span>
+    </header>
+    <div class="y_content">
+        <div class="y_contentTop">
+            <div class="y_chooseQone">
+                <div>+86</div>
+                <input type="text" placeholder="中国大陆" class="y_qone" name="box">
+                <img src="img/登录_03.png" class="y_rowBottom">
+            </div>
+            <div class="y_putContent">
+                <input type="text" placeholder="请输入手机号" class="y_putPhone" id="y_putPhone" name="box1">
+                <div class="y_outputPhone"></div>
+                <input type="text" placeholder="请输入登录密码" class="y_putPassword" name="box1" id="y_putPassword">
+                <div class="y_outputPassword"></div>
+            </div>
+            <div class="y_help">
+                <div class="y_forgetPassward">忘记密码</div>
+                <div>|</div>
+                <div class="y_nowRegister">立即注册</div>
+            </div>
+            <button class="y_login" id="y_login" onclick=show1()>登录</button>
+        </div>
+        <div class="y_or">
+            <div></div>
+            <div>或者</div>
+            <div></div>
+        </div>
+        <div class="y_fastResighter">
+            <p>社交账号快速登录</p>
+            <div>
+                <img src="img/登录-04.png" alt="">
+                <span>QQ</span>
+            </div>
+            <div class="y_molide">
+                <img src="img/登录_05.png" alt="">
+                <span>QQ</span>
+            </div>
+            <div>
+                <img src="img/登录_08.png" alt="">
+                <span>QQ</span>
+            </div>
+        </div>
+    </div>
+    <div class="y_footer">
+        <img src="img/登录_14.png" alt="">
+        <span>帮助与反馈</span>
+    </div>
+</body>
+</html>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/register.js"></script>
+<!-- <script src="js/require.js"></script> -->
+<!-- <script src="http://localhost/nightlife/php/app.php"></script> -->
+<script>
+    function show1(){
+        $phone = $("#y_putPhone").val();
+        $password = $("#y_putPassword").val();
+        //$repassword = $("#y_repassword").val();
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.onreadystatechange = function(){
+            if (this.readyState == 4&& this.status == 200){
+                if(this.responseText==1){
+                    window.location.href = "html/homePage.html";
+                }else{
+                    alert("你输入用户名或密码不正确！");
+                }
+             }
+        }
+        xmlHttp.open("GET","php/app.php?telePhone="+$phone+"&password="+$password,true);
+        xmlHttp.send();
+    }
+</script>

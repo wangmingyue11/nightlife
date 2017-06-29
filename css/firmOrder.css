@@ -1,0 +1,316 @@
+body{
+    background: #f1f0f0;
+}
+.y_container{
+    padding-top: 1.48rem;
+    font-size: 0.2rem;
+    color: #c6c6c6;
+    overflow: hidden;
+}
+/*****************每一部分内容的外框*******************/
+/*内容的第一部分联系人*/
+.y_linkman,.y_payment,.y_remark,.y_discount,.y_deliveryFee,.y_dish{
+    box-sizing: border-box;
+    width: 100%;
+    height: 1rem;
+    background: white;
+    margin-bottom:0.2rem;
+}
+/*联系人 备注的左边*/
+.y_linkmanInfo,.y_remarkTxt{
+    float: left;
+    width: 90%;
+    height: 100%;
+    margin-left:0.34rem;
+}
+/*打折的左边*/
+.y_discount{
+    padding-top: 0.17rem;
+}
+.y_discountTxt{
+    height: 0.47rem;
+    margin-left:0.34rem;
+    overflow: hidden;
+}
+.y_discountSize{
+    float: left;
+    width: 95%;
+}
+/*在线支付*/
+.y_payment{
+    padding-top:0.16rem;
+    padding-left: 0.34rem;
+}
+.y_payOnline{
+    height: 0.34rem;
+    overflow: hidden;
+}
+.y_payName{
+    float: left;
+}
+/*在线支付的单选框*/
+.complete{
+    float: right;
+    margin-right: 0.18rem;
+}
+.y_payOff{
+    display: inline-block;
+    height: 0.28rem;
+    font-size: 0.16rem;
+    text-align: center;
+    line-height: 0.28rem;
+    background: #09765b;
+    margin-left:0.1rem;
+}
+.y_payShop>div{
+    display:inline-block;
+}
+/*备注的高*/
+.y_remark{
+    height: 0.5rem;
+}
+/*打折的高*/
+.y_discount{
+    height:2rem;
+}
+/*联系人中的电话*/
+.y_linkmanTele{
+    margin-left: 0.6rem;
+}
+.y_dish{
+    overflow: hidden;
+}
+.y_dish div{
+    display:inline-block;
+    line-height:1rem;
+}
+.y_dish div:nth-child(2){
+    margin-left:0.33rem;
+}
+.y_dish div:nth-child(1){
+    width: 0.05rem;
+    height: 100%;
+    background: #007458;
+    float: left;
+}
+.y_dish>div:nth-child(3){
+    float: right;
+    margin-right:0.2rem;
+}
+.y_dish>div:nth-child(4){
+    float: right;
+    margin-right:0.4rem;
+}
+.y_dish>div:nth-child(4) img{
+    width: 0.12rem;
+    height: 0.12rem;
+}
+/*配送费*/
+.y_renderSer{
+    position: relative;
+}
+.y_renderSer span:nth-child(2){
+    position: absolute;
+    right: 0.54rem;
+    color: #ff163e;
+}
+
+/*备注的*/
+.y_remarkTxt{
+    line-height: 0.5rem;
+}
+
+/*支付部分改变宽*/
+.y_deliveryFee>div{
+    float: left;
+    width: 100%;
+    margin-left:0.34rem;
+}
+
+/*每部分内容的内边距*/
+.y_linkmanInfoTop,.y_linkmanAddress,.y_deliveryFee>div{
+    margin-top:0.2rem;
+    height: 0.2rem;
+}
+.y_discountSize{
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.y_discountSize div:nth-child(1){
+    float: left;
+}
+.y_discountSize div:nth-child(2){
+    float: right;
+    padding-right: 0.1rem;
+}
+/*对号的背景颜色*/
+.y_payOnline>button>svg,.y_payShop>button>svg{
+    width:0.2rem;
+    height: 0.2rem;
+    border-radius: 50%;
+    border: 1px solid #cfcfcf;
+    fill:white;
+}
+.y_payOnline>button.complete:hover svg{
+    fill:#09765b;
+}
+.y_payOnline>button.complete:hover svg .fill{
+    fill:white;
+}
+.y_payShop>button.complete:hover svg{
+    fill:#09765b;
+}
+.y_payShop>button.complete:hover svg .fill{
+    fill:white;
+}
+/*********************箭头******************************/
+/*联系人的箭头*/
+.y_linkmanImg{
+    margin-top:0.4rem;
+    height: 0.2rem;
+    vertical-align: middle;
+}
+/*备注的箭头*/
+.y_remarkRow{
+    margin-top:0.15rem;
+    height: 0.2rem;
+    vertical-align: middle;
+}
+/*打折的箭头*/
+.y_discountRow{
+    /*margin-top:0.2rem;*/
+    height: 0.2rem;
+    vertical-align: middle;
+}
+.y_help{
+    margin-bottom:1.92rem;
+    float: right;
+    padding-bottom:0.08rem;
+    color: #007458;
+    border-bottom: 1px solid #007458;
+    margin-right: 0.2rem;
+}
+.y_help::after{
+    content:'';//子元素内容为空
+    display:block;//设置为块级元素
+    height:0px;//高度设置为0
+    visibility:hidden;//设置子元素不可见
+    clear:both;
+}
+.y_help{
+    *zoom:1;//兼容IE6
+}
+
+
+.y_footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 0.54rem;
+    padding-left: 0.34rem;
+    width: 100%;
+    background: white;
+    font-size: 0.2rem;
+    color:#007458;
+}
+.y_footer div{
+    display: inline-block;
+}
+.y_price{
+    padding-top: 0.17rem;
+}
+.y_price div{
+    margin-right: 0.1rem;
+}
+#y_sum{
+    color:#c6c6c6;
+}
+#y_sumNum{
+    font-size: 0.25rem;
+}
+.y_define{
+    float: right;
+    width: 1.2rem;
+    height: 100%;
+    background:#007458;
+    color: white;
+    text-align: center;
+    line-height: 0.54rem;
+}
+.y_content2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: none;
+    background: rgba(0,0,0,0.7);
+    z-index: 40;
+}
+/***************************第二部分付款详情*****************************/
+.y_content2 .y_payDetails{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    top:38.38%;
+    font-size: 0.2rem;
+    background: white;
+}
+.y_paytitle{
+    box-sizing: border-box;
+    border-bottom: 0.01rem solid #e4e4e4;
+    width: 100%;
+    height:0.46rem;
+    margin: 0.12rem 0  0.12rem 0rem;
+    text-align: center;
+    position: relative;
+}
+.y_paytitle>img{
+    position: absolute;
+    top: 0.12rem;
+    left: 0.15rem;
+    width: 0.12rem;
+    height: 0.12rem;
+    z-index: 50;
+}
+.y_paytitle>span{
+    display: inline-block;
+}
+/*付款的内容*/
+.y_payContent{
+    margin: 0 0.3rem 0 0.3rem;
+}
+.y_alipay,.y_payWay,.y_payRequired{
+    box-sizing: border-box;
+    border-bottom: 0.01rem solid #e4e4e4;
+    padding: 0.25rem 0 0.25rem 0;
+    overflow: hidden;
+}
+.y_alipay>span:nth-child(1),.y_payWay>span:nth-child(1){
+    float: left;
+}
+.y_alipay>span:nth-child(2),.y_payWay img{
+    float: right;
+}
+.y_payWay img{
+    height: 0.2rem;
+    width: 0.12rem;
+    margin-top: 0.05rem;
+}
+.y_payWay>span:nth-of-type(2){
+    float: right;
+    margin-right:0.1rem;
+}
+.y_payFirm{
+    width:90.6%;
+    position: absolute;
+    bottom:0.16rem;
+    height: 0.45rem;
+    font-size: 0.2rem;
+    background: #007458;
+    margin: 0 0.3rem 0 0.3rem;
+    border-radius:0.04rem;
+    color: white;
+}
+

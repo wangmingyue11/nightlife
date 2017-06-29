@@ -1,0 +1,14 @@
+div.y_content{width: 100%;height: 100%;position: relative;}
+div.y_content div.y_header{width: 100%;height: 0.9rem;background: rgb(25,115,87);line-height: 1rem;position: fixed;}
+div.y_content div.y_header a{font-size: 0.25rem;text-decoration: none;color: white;float: left;width: 0.8rem;height: 100%;}
+div.y_content div.y_header a img{width: 0.205rem;height: 0.35rem;display: inline-block;padding-top: 0.15rem;}
+div.y_content div.y_header p{width: 1.2rem;font-size: 0.3rem;color: white;margin: 0 auto;}
+div.y_content div.y_input{width: 4rem;height: 0.4rem;background: white;margin: 0.25rem auto;border-radius: 0.07rem;}
+div.y_content div.y_input img{display: block;height: 0.4rem;width: 0.4rem;padding: 0.05rem;float: left;}
+div.y_content div.y_input input{display: block;width: 3.5rem;height: 100%;outline: none;font-size: 0.18rem;}
+div.y_content div.y_seekContent{width: 100%;height: 100%;padding:1.1rem 0.2rem 0 0.2rem;background: gainsboro;}
+div.y_content div.y_seekContent p{font-size: 0.2rem;opacity: 0.6;}
+div.y_content div.y_seekContent ul{width: 100%;height: 0.5rem;margin: 0.1rem;}
+div.y_content div.y_seekContent li{font-size: 0.18rem;float: left;margin: 0.05rem ;height: 100%;width:31.6%;text-align: center;line-height: 0.5rem;background: white;border-radius: 0.1rem;opacity: 0.8;}
+div.y_content div.y_seekContent
+

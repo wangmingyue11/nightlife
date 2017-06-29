@@ -1,0 +1,15 @@
+div.y_content{width: 100%;height: 100%;}
+div.y_content div.y_header{width: 100%;height: 0.9rem;background: rgb(25,115,87);line-height: 1rem;position: fixed;}
+div.y_content div.y_header a{font-size: 0.25rem;text-decoration: none;color: white;float: left;width: 0.8rem;height: 100%;}
+div.y_content div.y_header a img{width: 0.205rem;height: 0.35rem;display: inline-block;padding-top: 0.15rem;}
+div.y_content div.y_header p{width: 1.2rem;font-size: 0.3rem;color: white;margin: 0 auto;}
+div.y_content div.y_matter{width: 100%;height: 100%;padding-top: 0.9rem;}
+div.y_content div.y_matter div.y_headline{width: 100%;height: 1rem;padding: 0.25rem 0.15rem;position: relative;}
+div.y_content div.y_matter div.y_headline img{width: 0.5rem;height: 0.5rem;float: left;}
+div.y_content div.y_matter div.y_headline p{font-size: 0.2rem;width: 0.4rem;height: 100%;line-height: 0.5rem;margin-left: 0.6rem;color:gray;}
+div.y_content div.y_matter div.y_headline div{width: 5rem;height: 1px;background: gray;position:absolute;right: 3%;top: 50%; }
+div.y_content div.y_matter div.y_table{width: 100%;height: 3.5rem;box-sizing: border-box;padding: 0 0.15rem;}
+div.y_content div.y_matter div.y_table ul{width: 100%;height: 20%;}
+div.y_content div.y_matter div.y_table ul li{float: left;font-size: 0.23rem;height: 100%;width: 25%;border: 1px solid darkgray;background: white;opacity: 0.4;text-align: center;line-height: 0.7rem;}
+div.y_content div.y_matter div.y_table ul li:hover{background: gray;}
+

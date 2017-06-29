@@ -1,0 +1,253 @@
+/* header start */
+body{background:#f1f0f0;}
+img,a{display:block; text-decoration:none;}
+.l{float:left;}
+.r{float:right;}
+.y_header{width:100%; height:3rem; position:fixed; top:0; background:url("../img/header_bg.png")no-repeat; background-size:100% 100%; overflow:hidden; z-index:99;}
+.y_header img{width:1.53rem; height:1.53rem; margin:0.6rem auto 0;}
+.y_header p{height:0.69rem; line-height:0.69rem; font-size:0.25rem; color:white; text-align:center;}
+/* header end */
+
+/* main start */
+.y_main{width:100%; padding:0.1rem 0.1rem 0 0.1rem; overflow:hidden; margin-bottom:1.5rem; position:absolute; top:3rem; z-index:0;}
+.y_main a{width:2rem; height:2.44rem; background:white; border-radius:0.1rem; float:left;margin:0 0 0.1rem 0.1rem;}
+.y_main a:nth-child(1){margin-left:0;}
+.y_main a:nth-child(4){margin-left:0;}
+.y_main a:nth-child(7){margin-left:0;}
+.y_main a img{width:0.58rem; height:0.53rem; margin:0.56rem auto 0;}
+.y_main a p{font-size:0.25rem; height:0.75rem; line-height:0.75rem; text-align:center; color:rgb(0,0,0);}
+.y_main a p:last-child{height:0.6rem; line-height:0.3rem; color:#aaaaaa;}
+/* main end */
+
+/* footer start */
+.footer{width:100%; height:0.98rem; background:#117356; position:fixed; bottom:0;}
+.footer a{width:20%; height:0.98rem; float:left; overflow:hidden;}
+.footer a.active{background:#5ec3a5;}
+.footer a img{width:0.5rem; height:0.5rem; margin:0.1rem auto 0;}
+.footer a p{font-size:0.25rem; color:white; text-align:center;}
+/* footer end */
+
+/* nav start */
+.nav{width:100%; height:1.28rem; background:#117356; position:fixed; top:0; padding:0.71rem 0.17rem 0 0.15rem; z-index:99;}
+.nav a{color:rgb(255,255,255); float:left; position:relative; z-index:1;}
+.nav a img{width:.12rem; height:.25rem; margin:0.06rem 0.07rem 0 0; float:left;}
+.nav a p{font-size:.25rem; color:white; float:left; margin-top:0.07rem;}
+.nav > p{position:absolute; width:100%; left:0; bottom:.2rem; text-align:center; font-size:0.25rem; color:white; z-index:0;}
+.nav > img{width:0.34rem; height:0.33rem; margin-top:0.05rem; position:absolute; z-index:2; right:0.17rem;}
+.nav p.cenedit{position:absolute; left:2.8rem;}
+.nav .vouchers_icon{width:0.3rem; height:0.3rem;}
+.nav #address_icon{width:0.25rem; height:0.18rem; margin-top:0.1rem;}
+/* nav end */
+
+/* infmain start */
+.infmain{width:100%; position:absolute; top:1.28rem; padding-top:0.2rem; overflow:hidden;}
+.infmain a{width:90%; height:1rem; background:rgb(255,255,255); border-radius:0.1rem; margin:0 auto 0.1rem; color:#aaaaaa; padding:0 0.25rem 0 0.26rem;}
+.infmain a img{width:0.3rem; height:0.3rem; margin:0.34rem 0 0 0;}
+.infmain a p:nth-child(2){font-size:0.25rem; line-height:1rem; margin-left:0.11rem;}
+/* infmain end */
+
+/* sitemain start */
+.sitemain{width:100%; position:absolute; top:1.28rem; padding-top:0.2rem; padding-bottom:0.5rem; overflow:hidden;}
+.sitemain .add1{width:100%; height:0.55rem; background:rgb(255,255,255); padding:0 0 0 0.2rem; margin-bottom:0.2rem;}
+.sitemain .add1 img{width:0.3rem; height:0.3rem; margin:0.13rem 0.1rem 0 0;}
+.sitemain .add1 p{font-size:0.2rem; line-height:0.55rem; color:#117356;}
+
+.sitemain .add2{width:100%; height:0.9rem; background:rgb(255,255,255); margin-bottom:0.2rem;}
+.sitemain .add2 .add2_left{width:5rem; height:0.9rem; padding-left:0.2rem;}
+.sitemain .add2 .add2_left img{width:0.3rem; height:0.3rem; margin:0.3rem 0.1rem 0 0;}
+.sitemain .add2 .add2_left p{line-height:0.32rem; font-size:0.2rem; color:#aaaaaa;}
+.sitemain .add2 .add2_left p:nth-child(2){margin-top:0.13rem;}
+.sitemain .add2 .add2_right{width:1rem; height:0.9rem; position:relative;}
+.sitemain .add2 .add2_right .menu{width:0.78rem; height:0.78rem; background:#f1f0f0; border:1px solid #c6c6c6; display:none;}
+.sitemain .add2 .add2_right .menu a{height:0.38rem; line-height:0.38rem; font-size:0.2rem; text-align:center; border-bottom:1px solid #858585; color:#858585;}
+.sitemain .add2 .add2_right .menu a:nth-child(2){border-bottom:none;}
+.sitemain .add2 .add2_right img{width:0.05rem; height:0.21rem; margin-top:0.35rem; margin-left:0.79rem;}
+/* sitemain end */
+
+/* coll start */
+.coll{width:100%; position:absolute; top:1.28rem; z-index:0;}
+.coll li{height:2rem; margin-bottom:0.2rem; background:rgb(255,255,255); padding:0 0 0 0.15rem;}
+.coll li h2{font-size:0.2rem; font-weight:normal; color:#aaaaaa; height:0.77rem; line-height:0.59rem;}
+.coll li h2 span.pay{margin-right:0.17rem;}
+.coll li img{width:1.05rem; height:0.88rem; margin-right:0.16rem;}
+.coll li p{font-size:0.2rem; line-height:0.31rem; color:#aaaaaa;}
+.coll li p:nth-child(3){font-size:0.25rem; color:#117356;}
+.share{width:100%; height:1.5rem; background:rgba(0,0,0,.8); display:none;}
+.share .chat{width:33.3%; height:1.5rem; float:left;}
+.share .chat img{width:0.76rem; height:0.76rem; margin:0.27rem auto 0;}
+.share .chat p{height:0.47rem; line-height:0.47rem; font-size:0.2rem; text-align:center; color:rgb(255,255,255);}
+/* coll end */
+
+/* feed start */
+.feed{width:100%; position:absolute; top:1.28rem;}
+.feed li{width:100%;}
+.feed li h2{height:0.94rem; line-height:1.23rem; font-size:0.25rem; font-weight:normal; color:#aaaaaa; text-indent:0.27rem;}
+.feed li textarea{width:100%; height:0.8rem; display:block; background:rgb(255,255,255); outline:none; border:none; font-size:0.25rem; text-indent:0.27rem; padding-top:0.1rem;}
+.feed li input{width:100%; height:0.6rem; display:block; background:rgb(255,255,255); outline:none; border:none; font-size:0.25rem; text-indent:0.27rem;}
+.feed li .shot{width:100%; height:1.2rem; background:rgb(255,255,255); overflow:hidden;}
+.feed li .shot .upload{display:block; width:1rem; height:0.5rem; line-height:0.5rem; text-align:center; background:#117356; border-radius:0.05rem; font-size:0.18rem; color:rgb(255,255,255); margin:0.35rem 0 0 0.27rem;}
+.feed li .shot .file{margin:-0.5rem; opacity:0;}
+.btn{width:90%; height:0.5rem; background:#117356; outline:none; border:none; border-radius:0.1rem; color:rgb(255,255,255); display:block; font-size:0.25rem; margin:0.7rem auto 0;}
+/* feed end */
+
+/* set start */
+.set{width:100%; position:absolute; top:1.28rem; padding-top:0.2rem;}
+.set li{width:100%; height:0.7rem; line-height:0.7rem; background-color:rgb(255,255,255); font-size:0.25rem; text-indent:0.15rem; color:#aaaaaa; background-image:url("../img/angle.png"); background-repeat:no-repeat; background-position:96% center; margin-bottom:0.2rem;}
+/* set end */
+
+/* shop start */
+.shop{width:100%; position:absolute; top:1.28rem; padding:0.2rem 0 0 0.15rem;}
+.shop li{width:3rem; height:2.8rem; background:rgb(255,255,255); border-bottom:2px solid #117356; float:left; margin:0 0 0.05rem 0.1rem;}
+.shop li:nth-child(1){margin-left:0;}
+.shop li:nth-child(3){margin-left:0;}
+.shop li:nth-child(5){margin-left:0;}
+.shop li h3{line-height:0.35rem; font-size:0.25rem; color:#aaaaaa; text-indent:0.2rem; font-weight:normal; clear:both;}
+.shop li p{line-height:0.35rem; font-size:0.2rem; text-indent:0.2rem; color:#aaaaaa;}
+.shop .list1 .listimg{width:100%; height:1.7rem; overflow:hidden;}
+.shop .list1 .listimg2{padding:0.39rem 0 0 0.38rem;}
+.shop .list1 .listimg3{padding:0.31rem 0 0 0.25rem;}
+.shop .list1 .listimg5{padding:0.08rem 0 0 1rem;}
+.shop .list1 .listimg .img1{width:0.95rem; height:0.75rem; float:left;}
+.shop .list1 .listimg .img2{width:1.72rem; height:1.18rem; margin-top:0.25rem; float:left;}
+.shop .list1 .listimg .img3{width:2.14rem; height:0.87rem;}
+.shop .list1 .listimg .img4{width:1.34rem; height:0.99rem;}
+.shop .list1 .listimg .img5{width:2.25rem; height:1.03rem;}
+.shop .list2 .listimg .img6{width:0.96rem; height:1.26rem;}
+.shop .list1 .listimg .img7{width:1.65rem; height:1.65rem;}
+.shop .list2 h3{line-height:0.35rem; font-size:0.25rem; color:#aaaaaa; text-indent:0.2rem; font-weight:normal; margin-top:0.26rem;}
+.shop .list2 .listimg4{width:100%; height:1.49rem; padding:0.14rem 0 0 1.69rem;}
+/* shop end */
+
+/* percen start */
+.percen{width:100%; position:absolute; top:1.28rem;}
+.percen img{width:1.53rem; height:1.53rem; margin:0.6rem auto 0.27rem;}
+.percen .peredit{width:90%; height:5.15rem; background:rgb(255,255,255); border-radius:0.1rem; margin:0 auto;}
+.percen .peredit .name{width:4.6rem; height:0.94rem; line-height:0.94rem; border-bottom:1px solid #c6c6c6; margin:0 auto; font-size:0.25rem; background:url("../img/inf_icon5.png") 96% center no-repeat; color:#aaaaaa;}
+.percen .peredit .name input{width:2rem; height:0.5rem; outline:none; background:none; border:none; font-size:0.25rem; color:#aaaaaa;}
+.percen .perbtn{width:90%; height:0.5rem; line-height:0.5rem; background:#117356; margin:0.3rem auto; border-radius:0.1rem; font-size:0.25rem; text-align:center; color:rgb(255,255,255);}
+/* percen end */
+
+/* record start */
+.record{width:100%; position:absolute; top:1.28rem; padding-top:0.3rem;}
+.record li{width:90%; height:1.2rem; background:rgb(255,255,255); border-radius:0.1rem; margin:0 auto 0.2rem;}
+.record li img{width:1.59rem; height:1.2rem; float:left;}
+.record li .line{width:0.01rem; height:0.8rem; background:#c6c6c6; float:left; margin-top:0.2rem;}
+.record li .recontent{height:1.2rem; float:left;}
+.record li .recontent p{font-size:0.2rem; color:#aaaaaa; line-height:0.3rem; text-indent:0.2rem;}
+.record li .recontent p:nth-child(1){margin-top:0.15rem;}
+/* record end */
+
+/* details start */
+.details{width:100%; position:absolute; top:1.28rem;}
+.details ul{width:90%; background:rgb(255,255,255); border-radius:0.05rem; margin:0.2rem auto 0; padding:0.1rem; font-size:0.2rem;}
+.details ul h2{line-height:0.8rem; font-size:0.25rem; text-align:center; color:#aaaaaa; font-weight:normal;}
+.details ul li{font-size:0.2rem; text-indent:0.1rem; color:#aaaaaa; line-height:0.4rem;}
+.details p{text-indent:0.42rem; color:#aaaaaa; line-height:0.3rem;}
+
+/* vouchers start */
+.vouchers{width:100%; background:rgb(255,255,255); position:absolute; top:1.28rem;}
+.vouchers .tab{width:100%; height:0.57rem;}
+.vouchers .tab li{width:1.5rem; height:0.57rem; line-height:0.57rem; float:left; font-size:0.25rem; text-align:center; margin:0 0.311rem 0 0.32rem; color:#aaaaaa;}
+.vouchers .tab li.tab_on{border-bottom:0.03rem solid #117356; color:#117356;}
+.vouchers .tab_content{width:100%; padding-top:0.45rem;}
+.vouchers .tab_content li{font-size:0.25rem; display:none;}
+.vouchers .tab_content li img{width:4.43rem; height:1.44rem; margin:0 auto 0.33rem;}
+.vouchers .tab_content li.on{display:block;}
+/* vouchers end */
+
+/* mall start */
+.mall{width:100%; height:2rem; position:absolute; top:1.28rem;}
+.mall img{width:100%; height:3.65rem;}
+.mall .title{width:100%; height:0.92rem; line-height:0.92rem; background:rgb(255,255,255); padding:0 0.15rem 0 0.15rem;}
+.mall .title h2{font-size:0.25rem; font-weight:normal; float:left; color:#aaaaaa;}
+.mall .title .buy{width:1rem; height:0.45rem; line-height:0.45rem; text-align:center; background:#117356; font-size:0.25rem; float:right; border-radius:0.05rem; color:rgb(255,255,255); margin-top:0.235rem;}
+.mall .p1{height:0.49rem; font-size:0.2rem; color:#117356; background:rgb(255,255,255); text-indent:0.15rem;}
+.mall .introduction{width:100%;}
+.mall .introduction .p2{height:0.5rem; color:#aaaaaa; font-size:0.25rem; background:rgb(255,255,255); text-indent:0.15rem;}
+.mall .introduction .p3{line-height:0.3rem; color:#aaaaaa; font-size:0.2rem; background:rgb(255,255,255); text-align:justify; padding:0 0.15rem 0 0.15rem;}
+.mall .introduction .p4{height:0.5rem; line-height:0.5rem; color:#aaaaaa; font-size:0.25rem; background:rgb(255,255,255); text-indent:0.15rem;}
+.mall .introduction .p5{line-height:0.35rem; font-size:0.2rem; background:rgb(255,255,255); color:#aaaaaa; padding:0 0.15rem 0 0.15rem;}
+/* mall end */
+
+/* evaluate start */
+.evaluate{width:100%; position:absolute; top:1.28rem;}
+.evaluate .praise{padding:0.2rem 0 0.28rem 0.15rem;}
+.evaluate .praise p{font-size:0.2rem; float:left;}
+.evaluate .praise img{width:0.2rem; height:0.2rem; float:left; margin:0.02rem 0.08rem 0 0.08rem;}
+.evaluate .overall{width:100%; padding:0.2rem 0 0.4rem 0.15rem;}
+.evaluate .overall p{font-size:0.2rem; float:left; margin-right:0.17rem;}
+.evaluate .overall img{width:0.16rem; height:0.16rem; float:left; margin:0.02rem 0.04rem 0 0;}
+.evaluate #business{width:100%; height:1.5rem; background:rgb(255,255,255); outline:none; font-size:0.2rem; padding:0.2rem 0 0 0; border:none;}
+.evaluate .evbtn{width:90%; height:0.5rem; line-height:0.5rem; background:#117356; font-size:0.25rem; text-align:center; margin:0.2rem auto 0; border-radius:0.1rem; color:rgb(255,255,255);}
+/* evaluate end */
+
+/* myorder start */
+.myorder{width:100%; position:absolute; top:1.28rem;}
+.myorder .myorder_tab{width:100%; height:0.57rem;}
+.myorder .myorder_tab li{width:1.2rem; height:0.57rem; line-height:0.57rem; float:left; font-size:0.25rem; margin:0 0.2rem 0 0.2rem; text-align:center; color:#aaaaaa;}
+.myorder .myorder_tab li.myorder_tab_on{border-bottom:0.03rem solid #117356; color:#117356;}
+
+.myorder .myorder_content{width:100%; padding-top:0.2rem; display:none;}
+.myorder .myorder_content_on{display:block;}
+.myorder_content li{margin-bottom:0.2rem; background:rgb(255,255,255); padding:0 0 0.2rem 0.15rem; font-size:0.25rem; color:#aaaaaa;}
+.myorder_content li h2{font-size:0.2rem; font-weight:normal; color:#aaaaaa; height:0.77rem; line-height:0.59rem;}
+.myorder_content li h2 span.pay{margin-right:0.17rem;}
+.myorder_content li img{width:1.05rem; height:0.88rem; margin-right:0.16rem;}
+.myorder_content li p{font-size:0.2rem; line-height:0.31rem; color:#aaaaaa;}
+.myorder_content li p:nth-child(3){font-size:0.25rem; color:#117356;}
+.myorder_content li .myorder_content_btn{width:100%; height:0.6rem; background:rgb(255,255,255); padding:0.2rem 0.18rem 0 0;}
+.myorder_content li .myorder_content_btn span{width:1.2rem; height:0.4rem; line-height:0.4rem; border-radius:0.05rem; border:0.01rem solid #c6c6c6; text-align:center; font-size:0.2rem; margin-right:0.1rem;}
+.myorder_content li .myorder_content_btn span.airpay{color:#117356; border:0.01rem solid #117356;}
+/* myorder end */
+
+/* mypoints start */
+.mypoints{width:100%; position:absolute; top:1.28rem;}
+.mypoints img{width:2.5rem; height:2.5rem; margin:0.7rem auto 0;}
+.mypoints p{height:1.2rem; line-height:1.2rem; font-size:0.3rem; text-align:center; color:#aaaaaa;}
+.mypoints h2{height:1.27rem; line-height:1.87rem; font-size:0.25rem; color:#aaaaaa; font-weight:normal; text-indent:0.2rem;}
+.mypoints .rule{width:95%; line-height:0.4rem; font-size:0.2rem; background:rgb(255,255,255); margin:0 auto; border-radius:0.05rem; text-align:justify; padding:0.1rem; text-indent:0.4rem; color:#aaaaaa;}
+/* mypoints end */
+
+/* address start */
+.address{width:100%; position:absolute; top:1.28rem;}
+.address .contacts{height:0.88rem; line-height:0.88rem; font-size:0.2rem; color:#aaaaaa; text-indent:0.15rem; background:rgb(255,255,255);}
+.address .fillin{font-size:0.2rem; color:#aaaaaa; text-indent:0.15rem; background:rgb(255,255,255);}
+.address .fillin input{outline:none; border:none; background:none; font-size:0.2rem; color:#aaaaaa;}
+.address .selects{width:100%; padding:0.3rem 0 0.5rem 0;}
+.address .selects p{font-size:0.2rem; float:left; margin:0 0.15rem 0 0;}
+.address .selects img{width:0.2rem; height:0.2rem; float:left;}
+.address .tel{width:100%; font-size:0.2rem; height:0.47rem; border-bottom:0.01rem solid #c6c6c6; text-indent:0.15rem;}
+.address .delivery{font-size:0.2rem; height:0.5rem; line-height:0.5rem; text-indent:0.15rem;}
+.address .choose{width:100%; padding:0.15rem 0 0.15rem 0; background:rgb(255,255,255);}
+.address .choose .school{font-size:0.2rem; float:left; margin:0 0.15rem 0 0;}
+.address .choose img{width:0.19rem; height:0.28rem; float:left; margin:-0.05rem 0.05rem 0 0;}
+.address .number{line-height:0.35rem; text-indent:0.15rem;}
+.address .editaddress{width:90%; height:0.5rem; line-height:0.5rem; text-align:center; font-size:0.25rem; background:#117356; border-radius:0.1rem; margin:0 auto; color:rgb(255,255,255); margin-top:0.5rem;}
+/* address end */
+
+/* select start */
+.select{width:100%; position:absolute; top:1.28rem;}
+.select .search{width:100%; height:0.95rem; padding-top:0.25rem;}
+.select .search .search_btn{width:90%; height:0.5rem; border:1px solid #117356; border-radius:0.1rem; margin:0 auto;}
+.select .search .search_btn .select_pic1{width:0.24rem; height:0.24rem; float:left; margin:0.13rem 0 0 0.15rem;}
+.select .search .search_btn .search_input{width:4rem; height:0.47rem; float:left; outline:none; font-size:0.2rem; color:#aaaaaa; margin-left:0.1rem; background:none; border:none;}
+.select #l-map{width:100%; height:4.9rem; overflow:hidden;}
+#r-result{width:100%; font-size:0.2rem; margin-top:0.2rem; padding-left:0.1rem;}
+.select .position{width:100%; height:2rem;}
+.select .position li{height:1.15rem; overflow:hidden; padding-left:0.15rem;}
+.select .position li img{width:0.19rem; height:0.28rem; float:left; margin:0.3rem 0.15rem 0 0;}
+.select .position li p{font-size:0.2rem; line-height:0.32rem; color:#aaaaaa;}
+.select .position li .building1{margin-top:0.15rem; color:#117356;}
+.select .position li .building2{color:#117356;}
+.select .position li .building3{margin-top:0.15rem;}
+/* select end */
+
+/* night start */
+.night{width:100%; position:absolute; top:1.28rem; padding-top:0.38rem;}
+.night ul{width:90%; height:0.5rem; border:1px solid #c6c6c6; margin:0 auto;}
+.night ul li{width:33.3%; height:0.48rem; line-height:0.48rem; text-align:center; border-right:1px solid #c6c6c6; float:left; font-size:0.25rem; color:#aaaaaa;}
+.night ul li.active{height:0.48rem; background:#117356; border:0; color:white;}
+.night ul li:last-child{border-right:0;}
+.night .night_content{display:none;}
+.night .night_content.display{display:block;}
+/* night end */

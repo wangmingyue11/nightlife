@@ -1,0 +1,57 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}body,html{width:100%;height:100%}body{-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-text-size-adjust:none;margin:0;padding:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}ol,ul{list-style:none}hr{border:0;height:1px;background:#ccc}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}*{margin:0;padding:0;list-style:none;box-sizing:border-box}html,input,select,textarea,button,a{-webkit-tap-highlight-color:rgba(0,0,0,0)}
+body{padding-top: 0.98rem;padding-bottom: 0.98rem;background: rgb(241,240,240);}
+a{display: block;text-decoration: none;}
+div.y_header{width: 100%;height:0.98rem;background:rgb(25,115,87);position: fixed;top: 0;left: 0;font-size: 0.23rem;color: white;}
+div.y_header div.y_car{width: 100%;height:0.23rem;text-align: center;position: absolute;top:0.42rem;}
+div.y_header div.y_compile{width:12%;height:0.23rem;position:absolute;right: 0;top:0.43rem;cursor: pointer;}
+div.y_header div.y_compile span:nth-of-type(1){font-weight: 200;}
+/*内容*/
+div.y_container{padding-bottom: 0.57rem;}
+img.box{width: 0.2rem;height:0.21rem;}
+div.y_content{width:100%;background: rgb(241,240,240);font-size:0.2rem; }
+div.y_content div.y_fish{width: 100%;height: 0.69rem;position: relative;color:rgb(197,197,197);}
+div.y_content div.y_fish div.y_circle{width:100%;position: absolute;top:0.22rem;padding:0 0 0 0.15rem;}
+div.y_content div.y_fish div.y_circle span:nth-of-type(2){background: url("../img/duigou_06.png")no-repeat 1.35rem 0.03rem;background-size: 10% 75%;display: inline-block;}
+div.y_content div.y_fish div.y_long{width: 12%;position: absolute;right: 0;top:0.22rem;}
+div.y_content div.y_fish div.y_circle span:nth-of-type(1){padding: 0.07rem;background: rgb(25,115,87);border-radius: 0.08rem;color: white;}
+div.y_content div.y_fish div.y_circle span:nth-of-type(2){width: 1.5rem;}
+div.y_content div.y_fish div.y_circle span{margin-left:0.2rem;}
+div.y_content ul{width: 100%;height:1.2rem;background: white;position: relative;}
+div.y_content ul li{float: left;}
+div.y_content ul li:nth-of-type(1){width: 10%;text-align: center;padding:0.5rem 0 0.5rem 0;}
+div.y_content ul li:nth-of-type(2){width: 20%;padding:0.11rem 0 0.11rem 0;}
+div.y_content ul li:nth-of-type(2) img{width:1.01rem;height:1rem;}
+div.y_content ul li:nth-of-type(3){width:58%;color:rgb(197,197,197);}
+div.y_content ul li:nth-of-type(3) p{padding: 0.15rem 0 0.15rem 0;}
+div.y_content ul li:nth-of-type(3) span:nth-of-type(1){color:rgb(25,115,87);}
+div.y_content ul li:nth-of-type(3) span:nth-of-type(2){text-decoration:line-through;margin-left:0.2rem;}
+div.y_content ul li:nth-of-type(3) span:nth-of-type(3){color:white;font-size: 0.13rem;background: rgb(25,115,87);font-weight: 400;margin-left:0.2rem;}
+div.y_content ul li:nth-of-type(4){width:12%;height:1.2rem;float: right;text-align: center;color:rgb(197,197,197);margin:auto auto;}
+div.y_content ul li:nth-of-type(4) span{line-height: 1.2rem;}
+div.y_content ul li:nth-of-type(5){position: absolute;left:27%;line-height: 0.5rem;display: none;}
+div.y_content ul li:nth-of-type(5) span{display: inline-block;width: 1.38rem;height: 0.5rem;border: 0.01rem solid rgb(25,115,87);text-align: center;border-left: none;border-top: none;margin-left: 0;}
+div.y_content ul li:nth-of-type(5) span:nth-of-type(1){cursor: pointer;}
+div.y_content ul li:nth-of-type(5) span:nth-of-type(3){border-right:none;cursor: pointer;}
+div.y_content ul li:nth-of-type(6){display:inline-block;width:0.64rem;height:1.2rem;color: white;background: rgb(25,115,87);line-height: 1.2rem;text-align: center;font-size: 0.15rem;position: absolute;right: 0;cursor: pointer;display: none;}
+div.y_content ul li:nth-of-type(7){display: none;position: absolute;right: 0;top:0.4rem;}
+div.y_content ul li:nth-of-type(7) div{float: left;line-height: 0.42rem;}
+div.y_content ul li:nth-of-type(7) div:nth-of-type(1){width:0.42rem;height:0.42rem;cursor: pointer;border: 0.01rem solid rgb(216,216,216);border-radius: 0.42rem;text-align: center;color:rgb(25,115,87);}
+div.y_content ul li:nth-of-type(7) div:nth-of-type(2){width: 0.29rem;text-align: center;}
+div.y_content ul li:nth-of-type(7) div:nth-of-type(3){width:0.42rem;height:0.42rem;cursor: pointer;border: 0.01rem solid rgb(216,216,216);border-radius: 0.5rem;text-align: center;color:rgb(25,115,87);}
+ul.y_closing{width:100%;height:0.7rem;font-size: 0.22rem;border-top:0.01rem solid rgb(198,198,198);overflow: hidden;background: white;}
+ul.y_closing li{width: 100%;float: left;}
+ul.y_closing li:nth-of-type(1){width:10%;text-align: center;padding: 0.22rem 0 0.2rem 0;}
+ul.y_closing li:nth-of-type(2){width:50%;line-height: 0.75rem;}
+ul.y_closing li:nth-of-type(3){width:20%;}
+ul.y_closing li:nth-of-type(3) span{line-height: 0.4rem;;}
+ul.y_closing li:nth-of-type(4){width:20%;float: right;line-height: 0.7rem;color: white;background: rgb(25,115,87);text-align: center;}
+ul.y_closing li:nth-of-type(5){position:absolute;line-height: 0.7rem;color: white;background: rgb(252,69,7);text-align: center;width: 20%;left:56%;display: none;}
+ul.y_closing li:nth-of-type(6){width:20%;float: right;line-height: 0.7rem;color: white;background: rgb(25,115,87);text-align: center;display: none;}
+/*结尾*/
+div.y_footer{width:100%; height:0.98rem; background:#117356; position:fixed;bottom: 0;}
+div.y_footer a{width:20%; height:0.98rem; float:left;text-align: center;}
+div.y_footer a.active{background:#5ec3a5;}
+div.y_footer a img{width:0.5rem; height:0.5rem; margin:0.1rem auto 0;display: block;}
+div.y_footer a p{font-size:0.25rem; color:white; text-align:center;}
+.oInput{transform: scale(1.5,1.5);outline:none;border: none;}
+

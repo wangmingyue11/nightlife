@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/register.css">
+
+</head>
+<body>
+<header class="y_header">
+    <span class="y_heading">注册</span>
+</header>
+<div class="y_content">
+    <div class="y_contentTop">
+        <div>
+            <div>+86</div>
+            <input type="text" placeholder="中国大陆">
+            <img src="img/登录_03.png">
+        </div>
+        <div>
+            <input type="text" placeholder="请输入11位手机号" class="y_putPhone" id="phone">
+            <div class="y_outputPhone"></div>
+            <div class="y_checkCode">
+                <input type="text" placeholder="请输入验证码" id="y_putCheckCode">
+                <div id="y_getCheckCode">获取验证码</div>
+                <div class="y_loginOutputPsd"></div>
+            </div>
+            <input type="text" placeholder="请输入密码" class="y_putPassword" id="y_password">
+            <div class="y_outputPassword"></div>
+            <input type="text" placeholder="请确认密码" class="y_CheckPsd" id="y_repassword">
+            <div class="y_outputCheckPsd"></div>
+        </div>
+        <button class="y_login" id="y_register" onclick=show()>注册</button>
+    </div>
+</div>
+</body>
+</html>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/register.js"></script>
+<!--<script src="js/findPassword.js"></script>-->
+<script>
+function checkCode() {
+    if ($("#y_putCheckCode").val() == "") {
+        return $(".y_loginOutputPsd").html("您输入的内容不能为空");
+    }
+
+}
+function createCode() {
+    var codeArr = [];
+    for (var i = 0; i < 2; i++) {
+        codeArr.push(randNum(0, 100));
+    }
+    return codeArr;
+}
+function checkCode(){
+    if(isClick==false){
+        $(".y_loginOutputPsd").html("请点击获取验证码");
+    }else{
+        if($("#y_putCheckCode").val()!= $sum){
+            $(".y_loginOutputPsd").html("您输入的验证码不正确");
+        }else if($("#y_putCheckCode").val() == '') {
+            $(".y_loginOutputPsd").html("您输入的内容为空");
+        }
+    }
+
+}
+function show(){
+        $phone = $("#phone").val();
+        $password = $("#y_password").val();
+        $repassword = $("#y_repassword").val();
+        checkCode();
+        checkPhone();
+        checkPassword();
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.onreadystatechange = function(){
+            if (this.readyState == 4&& this.status == 200){
+                if(this.responseText==1){
+                    alert("你的用户名已存在！")
+                }else{
+                    if($(".y_outputPhone").html()==""&&$(".y_loginOutputPsd").html()==""&&$(".y_outputPassword").html()==""&&$(".y_outputCheckPsd").html()==""){
+                        confirm("请点击确认");
+                        alert("恭喜您注册成功")
+                        window.location.href="register.html";
+                    }
+                }
+            }
+        }
+        xmlHttp.open("GET","php/register.php?telePhone1="+$phone+"&password1="+$password+"&repassword1="+$repassword,true);
+        xmlHttp.send();
+}
+</script>

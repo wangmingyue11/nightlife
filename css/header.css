@@ -1,0 +1,33 @@
+/*标题部分*/
+.y_header{
+    width:100%;
+    height:1.28rem;
+    background: #007458;
+    font-size: 0.25rem;
+    box-sizing: border-box;
+    padding-top: 0.71rem;
+    padding-left:0.15rem;
+    color: #ffffff;
+    position: fixed;
+    z-index:1;
+    top:0;
+    left: 0;
+}
+/*标题左侧的返回*/
+.y_header .y_left{
+    position: absolute;
+    z-index: 5;
+}
+.y_left img{
+    vertical-align: middle;
+    width: 0.12rem;
+    height:0.25rem;
+}
+/*标题*/
+.y_header .y_heading{
+    position:absolute;
+    width:100%;
+    text-align:center;
+    display:block;
+    z-index: 1;
+}
